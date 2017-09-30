@@ -56,7 +56,7 @@ label {
 input, textarea {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 590px;
+	width: 100%;
 }
 form {
 	margin: 10px 30px;
@@ -66,18 +66,26 @@ a {
 	color: #777777;
 	border: 0;
 }
+img {
+	display: block;
+	margin: auto;
+}
 img:hover {
     background-color: #777777;
 }
 a:hover {
 	background-color: #777777;
 }
+.clear {
+    clear:both;
+    line-height:0;
+}
 .portfolio{
-    width: 620px;
-    margin-left: 15px
+    width: 100%;
+
 }
 .alignDivs{
-	width: 65%;
+	width: 80%;
 	margin-left:auto;
 	margin-right:auto;
 
@@ -106,9 +114,8 @@ a:hover {
 	border-left: none;
 }
 .icon{
-	width: 65px;
-	height: 65px;
-	padding: 2.5px;
+	width:100%;
+	height:100%;
 }
 .floatright{
 	float: right;
@@ -123,6 +130,7 @@ a:hover {
     width: 100%;
 }
 .contactForm {
+	width:100%;
 }
 /* Porfolio Section */
 .portfolio-image {
@@ -164,14 +172,14 @@ a:hover {
 	border: 1px solid #dddddd;
 	background-color: #ffffff;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 #connect{
-	width: 220px;
-	height: 70px;
+	display: inline-block;
+	width:90%;
 	margin: auto;
-	padding-left: 1px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding-right: 5%;
+	padding-left: 5%
 }
 #navMenu{
 	position: relative;
@@ -238,21 +246,45 @@ a:hover {
 	height: 30px;
 	border: none;
 }
-#connectMe{
-
-}
 #connectMeBox {
 	width:100%;
+}
+#connectMe {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px 0px 10px 0px;
 }
 #aboutText{
 	text-align: justify;
 }
+#portfolio-section {
+	width:90%;
+	margin: auto;
+	overflow: auto;
+}
+#content-heading {
+	width:100%;
+}
+#connectIcon {
+	float: left;
+	margin-left:10%;
+	width: 20%;
+	height:20%;
+	margin-top: 5%;
+	margin-bottom: 5%
+}
 
 @media screen and (max-width: 980px) {
 	.alignDivs{
-		width: 80%;
+		width: 60%;
 		margin-left:auto;
 		margin-right:auto;
+	}
+	.floatright {
+		float: left;
+	}
+	.portfolio-block {
+		width: 100%;
 	}
 
 }
@@ -273,13 +305,15 @@ a:hover {
 	}
 
 	#connect{
-
-		width: 220px;
-		height: 70px;
-		padding-left: 1px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		padding: 0;
 		margin-left: 15px;
+	}
+
+	#connectIcon {
+		margin-left:0%;
+		margin-right:5%;
+		width:15%;
+		height:15%;
 	}
 
 	#connectMe{
@@ -292,6 +326,11 @@ a:hover {
 		height: 68px;
 		display: table;
 		float: right;
+	}
+	.portfolio-block {
+		width: 44%;
+		margin-left: 3%;
+		margin-right: 3%
 	}
 
 }
@@ -328,6 +367,10 @@ a:hover {
 	#connectSect{
 		width: 90%;
 		margin-right: 4.5%;
+	}
+	.portfolio-block {
+		width: 100%;
+		margin: 10px 0px 10px 0px;
 	}
 
 }
